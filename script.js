@@ -79,7 +79,7 @@ const galaxyParameters = {
   outsideColor: new THREE.Color(0x48b8b8),
 };
 
-const defaultHeartImages = Array.from({ length: 5 }, (_, i) => `images/img${i + 1}.jpeg`);
+const defaultHeartImages = Array.from({ length: 11 }, (_, i) => `images/img${i + 1}.jpeg`);
 
 const heartImages = [
   ...(window.dataCCD?.data?.heartImages || []),
@@ -1272,3 +1272,4 @@ window.addEventListener('orientationchange', () => {
 
   setTimeout(checkOrientation, 200);
 });
+
